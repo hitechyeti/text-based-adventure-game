@@ -48,7 +48,7 @@ const textNodes = [
     text: 'money',
     options: [
       {
-        text: 'money',
+        text: this.state.money,
         setState: { blueGoo: true },
         nextText: 2
       },
