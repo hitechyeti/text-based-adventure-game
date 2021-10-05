@@ -4,7 +4,9 @@ const optionButtonsElement = document.getElementById('option-buttons')
 let state = {}
 
 function startGame() {
-  state = {}
+  state = {
+ money: 10
+  }
   showTextNode(1)
 }
 
@@ -51,7 +53,8 @@ const textNodes = [
       },
       {
         text: 'Leave the goo',
-        nextText: 2
+        nextText: 2,
+        
       }
     ]
   },
@@ -61,8 +64,7 @@ const textNodes = [
     options: [
       {
         text: 'Trade the goo for a sword',
-        requiredState: (currentState) => currentState.blueGoo,
-        setState: { blueGoo: false, sword: true },
+        requiredState: (currentState) => currentState.money > 5,
         nextText: 3
       },
       {
