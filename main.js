@@ -5,7 +5,7 @@ let state = {}
 
 function startGame() {
   state = {
- money: 10
+    money: 10
   }
   showTextNode(1)
 }
