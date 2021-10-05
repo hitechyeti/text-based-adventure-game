@@ -44,7 +44,7 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: 'this.state.money',
+    text: 'money',
     options: [
       {
         text: 'money',
