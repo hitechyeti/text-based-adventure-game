@@ -45,10 +45,10 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: 'money',
+    text: this.state.money,
     options: [
       {
-        text: this.state.money,
+        text: 'money',
         setState: { blueGoo: true },
         nextText: 2
       },
